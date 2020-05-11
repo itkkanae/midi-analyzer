@@ -46,7 +46,7 @@ public class Event {
             val = is.read();
             deltaTime = (deltaTime << 7) + (val & 0x7F);
         } while (val >= 0x80);
-        absTime = offset;
+        absTime = offset + deltaTime;
         return count;
     }
 

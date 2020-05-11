@@ -11,6 +11,7 @@ import java.util.List;
 public class Mtrk {
 
     private int len;
+    private int end;
     private List<Event> events;
 
     public Mtrk(int len, InputStream is) throws IOException {
@@ -24,10 +25,15 @@ public class Mtrk {
             last = events.get(events.size() - 1);
             offset += last.getDeltaTime();
         }
+        end = offset;
     }
 
     public int length() {
         return len;
+    }
+
+    public int endTicks() {
+        return end;
     }
 
     public List<Event> getEvents() {
