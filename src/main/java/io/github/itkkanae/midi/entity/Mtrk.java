@@ -19,7 +19,7 @@ public class Mtrk {
         this.len = len;
         int count = 0;
         int offset = 0;
-        Event last = null;
+        Event last;
         while (count < len) {
             count += Event.addEvent(is, offset, events);
             last = events.get(events.size() - 1);

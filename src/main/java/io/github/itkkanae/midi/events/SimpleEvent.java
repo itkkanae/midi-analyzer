@@ -1,5 +1,6 @@
 package io.github.itkkanae.midi.events;
 
+@SuppressWarnings({"unused", "WeakerAccess"})
 public class SimpleEvent {
 
     private int startTime;

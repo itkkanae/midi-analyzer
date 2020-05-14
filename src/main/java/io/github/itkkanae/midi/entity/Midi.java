@@ -118,16 +118,4 @@ public class Midi {
         return mtrks;
     }
 
-    @Override
-    public String toString() {
-        return "Midi{" +
-                "tracksCount=" + tracksCount +
-                ", fileFmt=" + fileFmt +
-                ", timeFmt=" + timeFmt +
-                ", ticks=" + ticks +
-                ", uspt=" + uspt +
-                ", mtrks=" + mtrks +
-                '}';
-    }
-
 }

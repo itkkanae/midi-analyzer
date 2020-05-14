@@ -1,5 +1,6 @@
 package io.github.itkkanae.midi.events;
 
+@SuppressWarnings({"unused"})
 public class SimpleTempoEvent extends SimpleEvent {
 
     private int us;

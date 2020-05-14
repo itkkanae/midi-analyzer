@@ -8,7 +8,7 @@ public class NoteMap {
     };
 
     public static String getName(int note) {
-        return NoteMap.notes[note % 12] + note / 12;
+        return NoteMap.notes[note % 12] + (note / 12 - 1);
     }
 
 }
